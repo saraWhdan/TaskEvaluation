@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dfbff0b4-76e1-415f-bde8-a5ddc39d3f3e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\ascom\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="C:\Users\eslam\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Remove="C:\Users\eslam\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Castle.Core" Version="5.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.18" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskEvaluation.Infrastructure\TaskEvaluation.Infrastructure.csproj" />
+    <ProjectReference Include="..\TaskEvaluation.Core\TaskEvaluation.Core.csproj" />
+    <ProjectReference Include="..\TaskEvaluation.Infrastructure\TaskEvaluation.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\" />
+  </ItemGroup>
+
+</Project>
